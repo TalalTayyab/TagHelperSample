@@ -1,0 +1,10 @@
+﻿@addtaghelper "Microsoft.AspNet.Mvc.TagHelpers"
+@model TagHelperSample.Model.Person
+
+<h2>Example of using SelectTagHelper</h2>
+
+
+<label>Choose Country</label>
+<select asp-for="Country" asp-items="ViewBag.Countries"/>
+
+
