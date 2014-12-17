@@ -1,0 +1,61 @@
+﻿
+@model TagHelperSample.Model.Person
+
+<h2>Example of using various TagHelpers</h2>
+
+<h4>Create a new person</h4>
+
+<form asp-action="FormSave" asp-controller="Home" asp-anti-forgery="true">
+
+    <div>
+        <label asp-for="Name" />
+        <input asp-for="Name" type="text" />
+        <span class="validation" asp-validation-for="Name" />
+    </div>
+
+
+    <div>
+
+        <label asp-for="Birthday" />
+        <input asp-for="Birthday" asp-format="{0:yyyy-MM-dd}" />
+        <span class="validation" asp-validation-for="Birthday" />
+
+    </div>
+
+
+    <div>
+
+        <label asp-for="Email" />
+        <input asp-for="Email" />
+        <span class="validation" asp-validation-for="Email" />
+    </div>
+
+
+    <div>
+        <label asp-for="Country" />
+        <select asp-for="Country" asp-items="ViewBag.Countries">
+            <option selected="selected" value="">Choose Country</option>
+        </select>
+        <span class="validation" asp-validation-for="Country" />
+
+    </div>
+
+    <div>
+        <label asp-for="Information" />
+        <textarea asp-for="Information"></textarea>
+        <span class="validation" asp-validation-for="Information" />
+    </div>
+
+
+    <strong>Validation Errors</strong>
+    <div class="validation" asp-validation-summary="ModelOnly">
+
+    </div>
+
+
+    <p>
+        <input type="submit" value="Save" />
+    </p>
+
+</form>
+

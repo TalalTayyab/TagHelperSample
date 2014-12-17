@@ -1,0 +1,30 @@
+﻿label{
+    width: 100px;
+    display:inline-block;
+}
+
+.validation
+{
+    color:red;
+}
+
+textarea
+{
+    width:300px;
+}
+
+div{
+    padding-bottom:10px;
+}
+
+th
+{
+    width: 200px;
+    text-align:left;
+}
+
+td
+{
+    width:200px;
+    text-align:left;
+}

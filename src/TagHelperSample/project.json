@@ -13,7 +13,8 @@
         "Microsoft.AspNet.Server.IIS": "1.0.0-rc1-10778",
         "Microsoft.AspNet.Server.WebListener" :  "1.0.0-rc1-11230",
         "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-12143",
-        "Microsoft.AspNet.Mvc": "6.0.0-rc1-12143"
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-12143",
+         "Microsoft.AspNet.Mvc.Common": "6.0.0-rc1-12186"
     },
     "frameworks": {
         "aspnet50": { },

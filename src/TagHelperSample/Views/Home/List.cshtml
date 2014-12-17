@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TagHelperSample.Model.Person>
+
+<h4>List of people added</h4>
+
+
+<table>
+
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Birthday</th>
+        <th>Country</th>
+    </tr>
+
+
+
+    @foreach (var person in Model)
+    {
+       <tr>
+           <td>@person.Name</td>
+           <td>@person.Email</td>
+           <td>@person.Birthday</td>
+           <td>@person.Country</td>
+       </tr>
+    }
+
+
+</table>
+

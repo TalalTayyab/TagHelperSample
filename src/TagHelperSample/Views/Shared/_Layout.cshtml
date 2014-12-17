@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "TagHelper sample website";
+}
+<html>
+
+
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/site.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    @RenderBody()
+
+    <footer>
+        <p>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+        </p>
+    </footer>
+</body>
+
+</html>
