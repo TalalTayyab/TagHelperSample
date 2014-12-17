@@ -7,3 +7,6 @@ System.IO.DirectoryNotFoundException: C:\Development\github\taghelpersample\src\
    at Microsoft.AspNet.FileSystems.PhysicalFileSystem..ctor(String root)
    at Microsoft.AspNet.Hosting.HostingEnvironment..ctor(IApplicationEnvironment appEnvironment, IEnumerable`1 configures
 )
+
+
+Raised issue at: https://github.com/aspnet/Hosting/issues/133
