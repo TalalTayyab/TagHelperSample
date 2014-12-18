@@ -1,0 +1,20 @@
+﻿{
+    "version": "1.0.0-*",
+    "dependencies": {
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-12143",
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-12143",
+        "Microsoft.AspNet.Mvc.Common": "6.0.0-rc1-12186"
+    },
+
+    "frameworks" : {
+        "aspnet50" : { 
+            "dependencies": {
+            }
+        },
+        "aspnetcore50" : { 
+            "dependencies": {
+                "System.Runtime": "4.0.20-beta-22231"
+            }
+        }
+    }
+}
