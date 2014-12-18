@@ -1,9 +1,12 @@
-﻿@model IEnumerable<TagHelperSample.Model.Person>
+﻿@using TagHelperSample.Model
+@model IEnumerable<Person>
+@addtaghelper "CustomTagHelpers"
 
 <h4>List of people added</h4>
 
+<ctable asp-columns='new string[] {"Name","Email", "Birthday", "Country"}' asp-items="Model"></ctable>
 
-<table>
+@*<table>
 
     <tr>
         <th>Name</th>
@@ -25,5 +28,5 @@
     }
 
 
-</table>
+</table>*@
 

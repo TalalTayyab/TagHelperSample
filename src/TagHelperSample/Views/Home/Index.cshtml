@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<TagHelperSample.Model.Person>
+
 <h2>TagHelper test website</h2>
 <h4>Also an example of using AnchorTagHelper</h4>
 
@@ -16,4 +17,10 @@
 
 </ul>
 
+
+@*
+    //Warning throws an exception
+    <p>
+    <a href="/Home/Index" asp-controller="Home" asp-action="Index">Home</a>
+</p>*@
 

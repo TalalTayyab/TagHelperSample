@@ -5,13 +5,13 @@ using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Mvc.Rendering;
 using TagHelperSample.Model;
 
-namespace TagHelper.Controllers
+namespace TagHelperSample.Controllers
 {
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
-            return View();
+            return View(Person.Persons);
         }
 
         public IActionResult About()

@@ -5,17 +5,18 @@
 
 <h4>Create a new person</h4>
 
-<form asp-action="FormSave" asp-controller="Home" asp-anti-forgery="true">
+
+<form asp-action="FormSave" asp-controller="Home" asp-anti-forgery="true" method="post" >
 
     <div>
         <label asp-for="Name" />
         <input asp-for="Name" type="text" />
         <span class="validation" asp-validation-for="Name" />
     </div>
-
+ 
+    
 
     <div>
-
         <label asp-for="Birthday" />
         <input asp-for="Birthday" asp-format="{0:yyyy-MM-dd}" />
         <span class="validation" asp-validation-for="Birthday" />
@@ -48,9 +49,7 @@
 
 
     <strong>Validation Errors</strong>
-    <div class="validation" asp-validation-summary="ModelOnly">
-
-    </div>
+    <div class="validation" asp-validation-summary="ModelOnly"/>
 
 
     <p>

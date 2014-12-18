@@ -30,6 +30,8 @@ namespace TagHelperSample.Model
         /// For now -we store all the persons in a static list :O
         /// </summary>
         public  static List<Person> Persons { get; set; } = new List<Person>();
+
+      
      
     }
 }
